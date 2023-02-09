@@ -9,11 +9,11 @@ class CountWidget extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    debugPrint('NewWidget - build');
+    debugPrint('CountWidget - build');
     return Consumer(
       builder: (context, ref, child) {
         final count = ref.watch(counterProvider);
-        debugPrint('NewWidget - count = $count');
+        debugPrint('CountWidget - count = $count');
         final String mText = count?.toString() ?? 'Nothing';
         return Text(
           'Count : $mText',

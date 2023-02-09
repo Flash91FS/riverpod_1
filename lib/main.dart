@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:riverpod_1/widgets/home_page.dart';
+import 'package:riverpod_1/widgets/counter_page.dart';
 import 'package:riverpod_1/extensions/operator_extension.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(title: 'Flutter Demo Home Page'),
+      home: const CounterPage(title: 'Counter Page'),
     );
   }
 }

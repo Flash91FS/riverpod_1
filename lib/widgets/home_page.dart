@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_1/providers/counter_provider.dart';
 import 'package:riverpod_1/widgets/count_widget.dart';
 
-import '../main.dart';
-
-
 class HomePage extends ConsumerWidget {
-  const HomePage({Key? key, required this.title}) : super(key: key);
+  const HomePage({
+    Key? key,
+    required this.title,
+  }) : super(key: key);
 
   final String title;
-
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

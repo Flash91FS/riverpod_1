@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_1/widgets/counter_page.dart';
 import 'package:riverpod_1/extensions/operator_extension.dart';
+import 'package:riverpod_1/widgets/names_stream_page.dart';
 import 'package:riverpod_1/widgets/tasks_page.dart';
 import 'package:riverpod_1/widgets/weather_page.dart';
 
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const CounterPage(title: 'Counter Page'),
       // home: const TasksPage(title: 'Tasks Page'),
-      home: const WeatherPage(title: 'Weather Page'),
+      // home: const WeatherPage(title: 'Weather Page'),
+      home: const NamesStreamPage(title: 'Names-Stream Page'),
     );
   }
 }

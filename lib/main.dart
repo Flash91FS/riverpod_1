@@ -3,6 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_1/widgets/counter_page.dart';
 import 'package:riverpod_1/extensions/operator_extension.dart';
 import 'package:riverpod_1/widgets/tasks_page.dart';
+import 'package:riverpod_1/widgets/weather_page.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const CounterPage(title: 'Counter Page'),
-      home: const TasksPage(title: 'Tasks Page'),
+      // home: const TasksPage(title: 'Tasks Page'),
+      home: const WeatherPage(title: 'Weather Page'),
     );
   }
 }

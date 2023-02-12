@@ -73,9 +73,7 @@ class _TaskAddWidgetState extends ConsumerState<TaskAddWidget> {
 
   void _createTask(BuildContext context, String name) {
     if (name.isNotEmpty) {
-      ref.read(tasksProvider.notifier).addTaskForString(
-            name,
-          );
+      ref.read(tasksProvider.notifier).addTaskForString(name);
     }
     _taskNameController.text = '';
   }
